@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Josh Heggen</title>
+    <title>Josh Heggen Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -12,15 +12,26 @@
     <div id="wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <a href="index.html" class="logo"><strong>Josh Heggen</strong> <span>Web Portfolio</span></a>
+        <a href="index.html" class="logo"><strong>Josh Heggen</strong> <span>Portfolio</span></a>
       </header>
       <!-- Additional Info on each project -->
+      <div id="moreInfo0" class="moreInfo">
+        <span onclick="Info(0);" class="iconSpan"><i class="far fa-times-circle"></i></span>
+        <ul>
+          <li>I graduated from the University of Wisconsin in 2017 with a mechanical engineering degree.</li>
+          <li>I worked for the last several years at a large software company as a technical solutions engineer, serving as the intermediary between our clients and our software developers.</li>
+          <li>Through this experience, I was able spend a lot of time reading and writing code, and fostering my interest in software development.</li>
+          <li>I realized that I have a passion for software development and want to pursue this as a full-time career.</li>
+          <li>I recently quit to work full-time on programming and personal projects.</li>
+          <li>I am self-taught in HTML/CSS/JavaScript as well as ReactJS and PHP/SQL, and am always looking to learn more.</li>
+        </ul>
+      </div>
       <div id="moreInfo1" class="moreInfo">
         <span onclick="Info(1);" class="iconSpan"><i class="far fa-times-circle"></i></span>
         <ul>
-          <li>This is a website I made by myself as a passion project.
-             The entire project was built from scratch.</li>
-          <li>The site features a public music feed as well as groups you can join with friends.</li>
+          <li>This is a live website I made by myself as a passion project.
+             The entire project was built from scratch and continues to grow.</li>
+          <li>The site features a public music feed as well as groups you can create with friends.</li>
           <li>You can post, comment, like, and there is a notification system in place.</li>
           <li>On the back-end, I have a number of PHP scripts communicating with the SQL database.</li>
           <li>The website is integrated with Spotify using their public APIs.<br>
@@ -29,29 +40,50 @@
       </div>
       <div id="moreInfo2" class="moreInfo">
         <span onclick="Info(2);" class="iconSpan"><i class="far fa-times-circle"></i></span>
-        <p>Test here Dragon Slayer</p>
+        <p></p>
+        <ul>
+          <li>This is a game I also built from scratch and had a lot of fun making.</li>
+          <li>The concept of the game is to buy the proper supplies to help you defeat a variety of foes.
+            It is very challenging and requires careful consideration.</li>
+          <li>It is a front-end only web application built using ReactJS.</li>
+        </ul>
       </div>
-      <div id="moreInfo3" class="moreInfo">
+      <!-- <div id="moreInfo3" class="moreInfo">
         <span onclick="Info(3);" class="iconSpan"><i class="far fa-times-circle"></i></span>
         <p>Test here visuals</p>
-      </div>
-      <div id="moreInfo4" class="resume">
+      </div> -->
+      <div id="moreInfo4" class="moreInfo resume">
         <span onclick="Info(4);" class="iconSpan"><i class="far fa-times-circle"></i></span>
         <img src="images/Resume.png" class="resumeImage" />
+      <a href="images/Resume.png" download="Josh_Heggen_Resume">Download PDF</a>
       </div>
 
       <!-- Banner -->
       <section id="banner" class="major">
         <div class="inner">
           <header class="major">
-            <h1>Hi, my name is Josh Heggen</h1>
+            <h1>Josh Heggen</h1>
           </header>
           <div class="content">
             <p>
-              I am a full stack software developer.<br />
-              Glad to have you here. Check out some of my projects <a href="#one" class="button next scrolly">below!</a>
+              Full-stack software developer. Welcome to my portfolio. <br />
+               <br><br>
+              <button class="button" onclick="Info(0);">About Me</button>
+              <button class="button" onclick="Info(4);">Resume</button>
+              <a href="#one" class="button scrolly">Projects</a>
             </p>
           </div>
+          <ul class="icons">
+            <li>
+              <a href="https://www.linkedin.com/in/josh-heggen/" target="_blank" class="icon brands alt fa-linkedin-in"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/jheggen12" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+            </li>
+            
+          </ul>
         </div>
       </section>
 
@@ -61,10 +93,10 @@
         <section id="one" class="tiles">
           <article>
             <span class="image">
-              <img src="images/GroupSlync.png"/>
+              <img src="images/groupslync.png"/>
             </span>
             <header class="major">
-              <h3>GroupSlync</h3>
+              <h3>groupslync</h3>
               <p>A full scale website for finding and sharing music with friends.</p>
               <br />
               <br />
@@ -92,13 +124,13 @@
             </div>
             <div class="links">
               <button class="linkButton" onclick="Info(2);">More Info</button>
-              <button class="linkButton">Website</button>
-              <button class="linkButton" onclick="window.open('https://github.com/jheggen12/Dragon-Slayer','_blank')">Github</button>
+              <button class="linkButton" onclick="window.open('https://jheggen12.github.io/dragonSlayer/','_blank')">Website</button>
+              <button class="linkButton" onclick="window.open('https://github.com/jheggen12/dragonSlayer','_blank')">Github</button>
             </div>
           </div>
           <article>
             <span class="image">
-              <img src="images/pic02.jpg"/>
+              <img src="images/dragonSlayer.png"/>
             </span>
             <header class="major">
               <h3><a href="landing.html" class="link">Dragon Slayer</a></h3>
@@ -106,17 +138,17 @@
               <br />
             </header>
           </article>
-          <article>
-            <!-- <span class="image">
+          <!-- <article>
+            <span class="image">
               <img src="images/pic03.jpg"/>
             </span>
             <header class="major">
               <h3><a href="landing.html" class="link">Visualizers</a></h3>
               <p>These will exist at somepoint</p>
-            </header> -->
+            </header>
           </article>
           <div class="info">
-            <!-- <div class="languages">
+            <div class="languages">
               <img class="languagePic" src="images/HTML-CSS.png"/>
               <img class="languagePic" src="images/JavaScript.png"/>
             </div>
@@ -124,14 +156,9 @@
               <button class="linkButton" onclick="Info(3);">More Info</button>
               <button class="linkButton">Website</button>
               <button class="linkButton">Github</button>
-            </div> -->
-          </div>
-          <div class="info">
-            <div class="links">
-              <button class="linkButton document" onclick="Info(4);">View Document</button>
             </div>
-          </div>
-          <article>
+          </div> -->
+          <!-- <article>
             <span class="image">
               <img src="images/Resume.png"/>
             </span>
@@ -139,62 +166,45 @@
               <h3>Resume</h3>
             </header>
           </article>
-        </section>
-
-        <!-- Two -->
-        <section id="two">
-          <div class="inner">
-            <header class="major">
-              <h2>Massa libero</h2>
-            </header>
-            <p>
-              Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-              Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
-              dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-              amet pharetra et feugiat tempus.
-            </p>
-            <ul class="actions">
-              <li>
-                <a href="landing.html" class="button next">Get Started</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <div class="info">
+            <div class="links">
+              <button class="linkButton document" onclick="Info(4);">View Document</button>
+            </div>
+          </div> -->
+        </section>        
       </div>
-
       <!-- Contact -->
       <section id="contact">
         <div class="inner">
-          <section>
-            <form method="post" action="#">
-              <div class="fields">
-                <div class="field half">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="field half">
-                  <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div class="field">
-                  <label for="message">Message</label>
-                  <textarea name="message" id="message" rows="6"></textarea>
-                </div>
+          <section id="form">
+            <div class="fields">
+              <div class="field half">
+                <label>Name</label>
+                <input type="text" id="name" />
               </div>
-              <ul class="actions">
-                <li>
-                  <input type="submit" value="Send Message" class="primary" />
-                </li>
-                <li><input type="reset" value="Clear" /></li>
-              </ul>
-            </form>
+              <div class="field half">
+                <label >Email</label>
+                <input type="text" id="theirEmail" />
+              </div>
+              <div class="field">
+                <label >Message</label>
+                <textarea id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input id="email" type="submit" value="Send Message" class="primary" />
+              </li>
+              <li><input id="reset" type="reset" value="Clear" /></li>
+            </ul>
+            <div id="messageSection"></div>
           </section>
           <section class="split">
             <section>
               <div class="contact-method">
                 <span class="icon solid alt fa-envelope"></span>
                 <h3>Email</h3>
-                <a href="#">heggen.josh@gmail.com</a>
+                <a href="mailto:joshwebdevel@gmail.com" target="_blank">joshwebdevel@gmail.com</a>
               </div>
             </section>
             <section>
@@ -223,22 +233,17 @@
         <div class="inner">
           <ul class="icons">
             <li>
-              <a href="https://github.com/jheggen12" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+              <a href="https://github.com/jheggen12" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/josh-heggen/" class="icon brands alt fa-linkedin-in"
+              <a href="https://www.linkedin.com/in/josh-heggen/" target="_blank" class="icon brands alt fa-linkedin-in"
                 ><span class="label">LinkedIn</span></a
               >
             </li>
           </ul>
-          <ul class="copyright">
-            <li>&copy; Untitled</li>
-            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-          </ul>
         </div>
       </footer>
     </div>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>

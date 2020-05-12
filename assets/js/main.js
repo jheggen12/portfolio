@@ -1,11 +1,5 @@
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function ($) {
-  var $window = $(window),
+  let $window = $(window),
     $body = $("body"),
     $wrapper = $("#wrapper"),
     $header = $("#header"),
@@ -181,7 +175,32 @@
       }, 100);
     });
   }
-
+  //Email
+  const emailButton = document.getElementById("email"),
+    messageSection = document.getElementById("messageSection");
+  emailButton.addEventListener("click", function () {
+    const message = $("#message").val();
+    const name = $("#name").val();
+    const email = $("#theirEmail").val();
+    $.post({
+      url: "./email.php",
+      data: { message, name, email },
+      success: function (data) {
+        messageSection.innerHTML = data;
+      },
+      error: function () {
+        messageSection.innerHTML = "E-mail failed to send. Please try again.";
+      },
+    });
+  });
+  //clear form
+  const resetButton = document.getElementById("reset");
+  resetButton.addEventListener("click", function () {
+    $("#message").val(null);
+    $("#name").val(null);
+    $("#theirEmail").val(null);
+    messageSection.innerHTML = "";
+  });
   // Banner.
   $banner.each(function () {
     var $this = $(this),
