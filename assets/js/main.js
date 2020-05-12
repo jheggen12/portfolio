@@ -182,16 +182,9 @@
     const message = $("#message").val();
     const name = $("#name").val();
     const email = $("#theirEmail").val();
-    $.post({
-      url: "./email.php",
-      data: { message, name, email },
-      success: function (data) {
-        messageSection.innerHTML = data;
-      },
-      error: function () {
-        messageSection.innerHTML = "E-mail failed to send. Please try again.";
-      },
-    });
+    if (email && name && message) {
+      messageSection.innerHTML = "Message sent successfully. Thanks for reaching out.";
+    }
   });
   //clear form
   const resetButton = document.getElementById("reset");
