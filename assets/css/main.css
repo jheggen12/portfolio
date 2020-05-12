@@ -16,6 +16,9 @@
   padding: 10px;
   border: solid white 3px;
 }
+#messageSection {
+  margin: 20px;
+}
 .links {
   justify-content: space-around;
   display: flex;
