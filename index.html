@@ -176,28 +176,30 @@
       <!-- Contact -->
       <section id="contact">
         <div class="inner">
-          <section id="form">
-            <div class="fields">
-              <div class="field half">
-                <label>Name</label>
-                <input type="text" id="name" />
+          <section>
+            <form method="POST" action="http://formspree.io/joshwebdevel@gmail.com">
+              <div class="fields">
+                <div class="field half">
+                  <label>Name</label>
+                  <input type="text" id="name" />
+                </div>
+                <div class="field half">
+                  <label >Email</label>
+                  <input type="email" name="_replyto" id="theirEmail" />
+                </div>
+                <div class="field">
+                  <label >Message</label>
+                  <textarea id="message" name="body" rows="6"></textarea>
+                </div>
               </div>
-              <div class="field half">
-                <label >Email</label>
-                <input type="text" id="theirEmail" />
-              </div>
-              <div class="field">
-                <label >Message</label>
-                <textarea id="message" rows="6"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <li>
-                <input id="email" type="submit" value="Send Message" class="primary" />
-              </li>
-              <li><input id="reset" type="reset" value="Clear" /></li>
-            </ul>
+              <ul class="actions">
+                <li>
+                  <input id="email" type="submit" type="submit" value="Send" value="Send Message" class="primary" />
+                </li>
+                <li><input id="reset" type="reset" value="Clear" /></li>
+              </ul>
             <div id="messageSection"></div>
+            </form>
           </section>
           <section class="split">
             <section>
@@ -254,7 +256,6 @@
     <script src="assets/js/main.js"></script>
     <script>
       const Info = (id) => {
-        console.log(id);
         $("#moreInfo" + id).toggle();
       };
     </script>
