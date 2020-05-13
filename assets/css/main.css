@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 20vh;
+  height: 30vh;
   padding: 0px 100px;
 }
 .languagePic {
@@ -32,6 +32,7 @@
   height: 2.5em;
   line-height: 1em;
   font-size: 14px;
+  width: 200px;
 }
 .info {
   width: 50%;
@@ -1580,13 +1581,13 @@ button:disabled,
 }
 
 @media screen and (max-width: 480px) {
-  .tiles {
-    display: block;
+  .links {
+    padding: 0;
   }
-
-  .tiles article {
-    height: 20em;
-    width: 100% !important;
+  .linkButton {
+    width: 120px;
+    font-size: 12px;
+    padding: 0;
   }
 }
 
@@ -1737,6 +1738,9 @@ button:disabled,
 @media screen and (max-width: 736px) {
   .spotlights > section > .content {
     padding: 3em 1.5em 1em 1.5em;
+  }
+  .button {
+    font-size: 0.5em;
   }
 }
 
@@ -2135,14 +2139,6 @@ body.is-preload #header.alt {
 }
 
 #banner > .inner .content {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
   margin: 0 0 2em 0;
 }
 
@@ -2429,8 +2425,15 @@ body.is-preload #banner > .inner {
 
 .resume {
   height: 90%;
-  width: 40% !important;
+  max-height: calc(1 * 100vw);
+  width: calc(100vw * 0.6) !important;
   text-align: center;
+}
+@media screen and (max-width: 736px) {
+  .resume {
+    height: 90%;
+    text-align: center;
+  }
 }
 .moreInfo {
   -moz-transition: -moz-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
