@@ -1219,7 +1219,7 @@ button,
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.5em;
   font-weight: 600;
   height: 3.5em;
   letter-spacing: 0.25em;
@@ -1738,9 +1738,6 @@ button:disabled,
 @media screen and (max-width: 736px) {
   .spotlights > section > .content {
     padding: 3em 1.5em 1em 1.5em;
-  }
-  .button {
-    font-size: 0.5em;
   }
 }
 
